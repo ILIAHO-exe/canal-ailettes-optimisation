@@ -2,13 +2,13 @@
 
 Étude paramétrique d'optimisation d'un échangeur de chaleur compact avec ailettes rectangulaires en régime laminaire.
 
-## 📊 Contexte Scientifique
+##  Contexte Scientifique
 
 Cette étude s'inscrit dans la tradition de recherche établie par la thèse de **Frédéric Michel (CEA GRETh, 2003)** sur l'optimisation d'échangeurs thermiques compacts.
 
 **Objectif** : Déterminer la géométrie optimale (hauteur et espacement des ailettes) qui maximise le critère de performance **PEC** (Performance Evaluation Criteria).
 
-## 🎯 Paramètres de l'Étude
+##  Paramètres de l'Étude
 
 ### Matrice Paramétrique
 - **Hauteur ailettes (h_fin)** : 2, 4, 6, 8 mm (4 valeurs)
@@ -44,7 +44,7 @@ Cette étude s'inscrit dans la tradition de recherche établie par la thèse de 
 
 **Reynolds** : Re = ρVD_h/μ ≈ 645 → Régime laminaire confirmé
 
-## 📐 Critère de Performance (PEC)
+##  Critère de Performance (PEC)
 
 ```
 PEC = (Nu/Nu₀) / (f/f₀)^(1/3)
@@ -60,7 +60,7 @@ Où :
 - PEC = 1.5 : +50% d'efficacité globale
 - **Objectif** : Maximiser PEC
 
-## 🏗️ Structure du Projet
+##  Structure du Projet
 
 ```
 canal-ailettes-optimisation/
@@ -91,7 +91,7 @@ canal-ailettes-optimisation/
     └── 20_h8_s10/                     # Dernier cas
 ```
 
-## 🚀 Instructions d'Utilisation
+##  Instructions d'Utilisation
 
 ### 1. Cloner le repository
 ```bash
@@ -121,7 +121,7 @@ python3 scripts/extract_results.py
 python3 scripts/analyze_optimization.py
 ```
 
-## 📊 Résultats Attendus
+##  Résultats Attendus
 
 Les scripts génèrent :
 - `results_summary.csv` : Résumé des 21 cas
@@ -134,7 +134,7 @@ Les scripts génèrent :
   - Sensibilité ΔP vs géométrie
   - Courbes d'optimisation
 
-## 🔧 Solveur Utilisé
+##  Solveur Utilisé
 
 **buoyantBoussinesqPimpleFoam** (OpenFOAM)
 
@@ -145,22 +145,22 @@ Résout simultanément :
 
 Approximation de Boussinesq adaptée pour ΔT modéré (30 K).
 
-## 📚 Références Scientifiques
+## Références Scientifiques
 
 1. **Michel, F.** (2003). "Numerical simulations and experimental investigations of an offset strip fin compact heat exchanger." *Thèse, CEA GRETh.*
 
 2. **OpenFOAM Documentation** : https://www.openfoam.com/documentation/
 
-## 👤 Auteur
+##  Auteur
 
 **Elhanily** - Stage M1 CORIA - Rouen Normandie
 
-## 📝 Licence
+##  Licence
 
 MIT License
 
 ---
 
-**Status** : 🔄 En cours de développement
+**Status** :  En cours de développement
 
 **Dernière mise à jour** : 19 mai 2026
