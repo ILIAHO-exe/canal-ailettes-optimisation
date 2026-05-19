@@ -22,7 +22,7 @@ Cette étude s'inscrit dans la tradition de recherche établie par la thèse de 
 | Longueur canal (L_ch) | 100 mm |
 | Épaisseur ailette (e_fin) | 1 mm |
 
-## 🌡️ Conditions Physiques
+##  Conditions Physiques
 
 ### Propriétés du Fluide (Air à 300 K)
 | Propriété | Symbole | Valeur | Unité |
