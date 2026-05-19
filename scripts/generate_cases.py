@@ -48,7 +48,7 @@ def main():
         f.write("s_fin = 0 mm\n")
         f.write("Description: Channel without fins for baseline comparison\n")
     
-    print(f"   ✅ Created: {ref_case}")
+    print(f"    Created: {ref_case}")
     
     # CASES 1-20: PARAMETRIC (with fins)
     case_num = 1
@@ -71,11 +71,11 @@ def main():
                 f.write(f"s_fin = {s_fin} mm\n")
                 f.write(f"Description: Rectangular fins with height {h_fin}mm, spacing {s_fin}mm\n")
             
-            print(f"   ✅ Created: {case_dir}")
+            print(f"    Created: {case_dir}")
             case_num += 1
     
     print("\n" + "=" * 80)
-    print("✅ ALL 21 CASES CREATED SUCCESSFULLY!")
+    print(" ALL 21 CASES CREATED SUCCESSFULLY!")
     print("=" * 80)
     print("\nNext step:")
     print("  python3 scripts/generate_blockMeshDict.py")
