@@ -1,0 +1,48 @@
+# OpenFOAM
+*/processor*
+*/VTK
+*/dynamicCode
+*/postProcessing
+*/constant/polyMesh
+
+# Log files
+*.log
+log.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+ENV/
+
+# Results & Data
+*.csv
+*.png
+*.jpg
+results/
+plots/
+
+# Temporary files
+*~
+*.swp
+*.swo
+.DS_Store
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
