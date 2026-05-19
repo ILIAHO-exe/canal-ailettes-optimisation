@@ -1,0 +1,56 @@
+# Simulation Parameters Configuration
+
+## Physical Properties (Air at 300 K)
+fluid:
+  rho: 1.2                    # kg/m³
+  mu: 1.86e-5                 # Pa·s (dynamic viscosity)
+  nu: 1.58e-5                 # m²/s (kinematic viscosity)
+  k: 0.0262                   # W/(m·K) (thermal conductivity)
+  cp: 1005                    # J/(kg·K) (specific heat)
+  Pr: 0.707                   # Prandtl number
+
+## Geometry (all values in mm, converted to m in scripts)
+geometry:
+  H_channel: 10               # Channel height (FIXED)
+  L_channel: 100              # Channel length (FIXED)
+  e_fin: 1                    # Fin thickness (FIXED)
+  h_fin: [2, 4, 6, 8]        # Fin heights (VARIABLE 1) - 4 values
+  s_fin: [2, 4, 6, 8, 10]    # Fin spacings (VARIABLE 2) - 5 values
+  # Total combinations: 4 × 5 = 20 parametric cases + 1 reference = 21 total
+
+## Boundary Conditions
+inlet:
+  velocity: 0.5               # m/s (uniform profile)
+  temperature: 300            # K
+
+outlet:
+  type: "free"                # Free boundary
+
+wall:
+  temperature: 330            # K (heated surface)
+  type: "no-slip"             # Viscous condition
+
+## Simulation Settings
+simulation:
+  regime: "laminar"           # Re ≈ 645 < 2300
+  endTime: 10                 # s (time to reach steady state)
+  deltaT: 0.001              # s (time step)
+  writeInterval: 100         # Write every 100 steps = 0.1 s
+  
+## Mesh Parameters
+mesh:
+  type: "hexahedral"          # Structured grid
+  generator: "blockMesh"      # OpenFOAM utility
+  cells_approx: 10000         # Approximate cells per case
+  yplus: 1                    # Wall resolution (y+ < 1 for laminar)
+  
+## Solver Settings
+solver: "buoyantBoussinesqPimpleFoam"
+description: "Solves coupled U-p-T with Boussinesq approximation"
+
+## Post-processing
+postprocessing:
+  extract_Nu: true            # Calculate Nusselt number
+  extract_f: true             # Calculate friction factor
+  extract_DP: true            # Calculate pressure drop
+  calculate_PEC: true         # Calculate Performance Evaluation Criteria
