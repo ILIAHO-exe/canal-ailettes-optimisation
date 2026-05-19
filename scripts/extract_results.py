@@ -178,7 +178,7 @@ def calculate_friction_factor(case_dir):
 
 def main():
     print("=" * 80)
-    print("📊 EXTRACTING RESULTS FROM ALL SIMULATIONS")
+    print(" EXTRACTING RESULTS FROM ALL SIMULATIONS")
     print("=" * 80)
     
     cases_dir = Path('cases')
@@ -213,7 +213,7 @@ def main():
             # Get latest timestep
             latest_dir = get_latest_timestep(case_dir)
             if not latest_dir:
-                print(f"  ⚠️  No timestep directory found")
+                print(f"    No timestep directory found")
                 continue
             
             print(f"  Latest timestep: {latest_dir.name}s")
@@ -253,13 +253,13 @@ def main():
     df = pd.DataFrame(results)
     
     print("\n" + "=" * 80)
-    print("📋 RESULTS SUMMARY")
+    print(" RESULTS SUMMARY")
     print("=" * 80)
     print(df.to_string(index=False))
     
     # Save to CSV
     df.to_csv('results_summary.csv', index=False)
-    print("\n✅ Results saved to results_summary.csv")
+    print("\n Results saved to results_summary.csv")
     
     print("\nNext step:")
     print("  python3 scripts/analyze_optimization.py")
