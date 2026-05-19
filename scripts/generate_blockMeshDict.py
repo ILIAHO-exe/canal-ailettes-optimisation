@@ -249,7 +249,7 @@ def main():
     cases_dir = Path('cases')
     
     print("=" * 80)
-    print("🔨 GENERATING PARAMETRIZED blockMeshDict")
+    print(" GENERATING PARAMETRIZED blockMeshDict")
     print("=" * 80)
     
     # REFERENCE CASE
@@ -260,7 +260,7 @@ def main():
     with open(ref_case / 'system' / 'blockMeshDict', 'w') as f:
         f.write(mesh_content)
     
-    print(f"   ✅ blockMeshDict created for reference case")
+    print(f"    blockMeshDict created for reference case")
     
     # PARAMETRIC CASES
     case_num = 1
@@ -279,11 +279,11 @@ def main():
                 f.write(mesh_content)
             
             num_fins = int(L_ch / s_fin)
-            print(f"   ✅ blockMeshDict created (num_fins={num_fins})")
+            print(f"    blockMeshDict created (num_fins={num_fins})")
             case_num += 1
     
     print("\n" + "=" * 80)
-    print("✅ ALL blockMeshDict FILES GENERATED!")
+    print("ALL blockMeshDict FILES GENERATED!")
     print("=" * 80)
     print("\nNext step:")
     print("  ./scripts/run_simulations.sh")
