@@ -17,7 +17,7 @@ def analyze_optimization():
     # Try to load results
     results_file = Path('results_summary.csv')
     if not results_file.exists():
-        print("⚠️  results_summary.csv not found")
+        print("  results_summary.csv not found")
         print("   Run: python3 scripts/extract_results.py")
         return
     
@@ -25,7 +25,7 @@ def analyze_optimization():
     df = pd.read_csv(results_file)
     
     print("=" * 80)
-    print("📊 OPTIMIZATION ANALYSIS")
+    print(" OPTIMIZATION ANALYSIS")
     print("=" * 80)
     
     print("\nLoaded data:")
@@ -35,7 +35,7 @@ def analyze_optimization():
     Path('results').mkdir(exist_ok=True)
     
     print("\n" + "=" * 80)
-    print("✅ Analysis complete!")
+    print(" Analysis complete!")
     print("=" * 80)
     
     print("\nGenerated files:")
