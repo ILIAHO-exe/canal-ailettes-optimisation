@@ -29,7 +29,7 @@ def main():
     cases_dir.mkdir(exist_ok=True)
     
     print("=" * 80)
-    print("📊 GENERATING 21 OPTIMIZATION CASES")
+    print(" GENERATING 21 OPTIMIZATION CASES")
     print("=" * 80)
     
     # CASE 0: REFERENCE (no fins)
