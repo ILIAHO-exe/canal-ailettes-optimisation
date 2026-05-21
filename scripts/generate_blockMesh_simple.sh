@@ -113,7 +113,7 @@ mergePatchPairs
 // ************************************************************************* //
 EOFDICT
 
-echo "✅ Reference case created"
+echo " Reference case created"
 
 # ========== CAS PARAMÉTRIQUES (avec ailettes) ==========
 # Pour simplifier, on crée aussi un canal lisse pour les cas avec ailettes
@@ -238,13 +238,13 @@ mergePatchPairs
 // ************************************************************************* //
 EOFDICT
         
-        echo "✅ Created: ${case_name}"
+        echo " Created: ${case_name}"
     done
 done
 
 echo ""
 echo "=================================================================================="
-echo "✅ ALL blockMeshDict FILES GENERATED!"
+echo "ALL blockMeshDict FILES GENERATED!"
 echo "=================================================================================="
 echo ""
 echo "Next step:"
