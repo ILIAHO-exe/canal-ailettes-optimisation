@@ -1,0 +1,4 @@
+REFERENCE CASE - NO FINS
+h_fin = 0 mm
+s_fin = 0 mm
+Description: Channel without fins for baseline comparison

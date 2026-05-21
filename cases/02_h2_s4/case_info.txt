@@ -1,0 +1,4 @@
+PARAMETRIC CASE 2
+h_fin = 2 mm
+s_fin = 4 mm
+Description: Rectangular fins with height 2mm, spacing 4mm

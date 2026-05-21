@@ -1,0 +1,4 @@
+PARAMETRIC CASE 16
+h_fin = 8 mm
+s_fin = 2 mm
+Description: Rectangular fins with height 8mm, spacing 2mm

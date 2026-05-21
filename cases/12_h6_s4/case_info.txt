@@ -1,0 +1,4 @@
+PARAMETRIC CASE 12
+h_fin = 6 mm
+s_fin = 4 mm
+Description: Rectangular fins with height 6mm, spacing 4mm

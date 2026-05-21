@@ -1,0 +1,4 @@
+PARAMETRIC CASE 19
+h_fin = 8 mm
+s_fin = 8 mm
+Description: Rectangular fins with height 8mm, spacing 8mm

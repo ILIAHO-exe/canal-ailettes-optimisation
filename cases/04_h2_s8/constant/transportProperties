@@ -1,0 +1,29 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  www.openfoam.com
+    \\  /    A nd           | Version:  v2106
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+transportModel  Newtonian;
+
+nu              nu [0 2 -1 0 0 0 0] 1.58e-5;    // Air kinematic viscosity
+rho             rho [1 -3 0 0 0 0 0] 1.2;       // Air density
+
+// Boussinesq parameters
+beta            beta [0 0 0 -1 0 0 0] 3.41e-3;  // Thermal expansion coefficient
+TRef            TRef [0 0 0 1 0 0 0] 300;       // Reference temperature (K)
+Pr              Pr [0 0 0 0 0 0 0] 0.71;        // Prandtl number for air
+Prt             Prt [0 0 0 0 0 0 0] 0.85;       // Turbulent Prandtl number
+
+// ************************************************************************* //
