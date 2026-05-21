@@ -371,7 +371,7 @@ def main():
     with open(ref_case / "system" / "blockMeshDict", "w") as f:
         f.write(mesh)
     
-    print("   ✅ Reference case created")
+    print("    Reference case created")
     
     # Cas paramétriques
     h_fins = [2, 4, 6, 8]
@@ -391,11 +391,11 @@ def main():
             with open(case_dir / "system" / "blockMeshDict", "w") as f:
                 f.write(mesh)
             
-            print(f"      ✅ {case_name} created")
+            print(f"       {case_name} created")
             case_num += 1
     
     print("\n" + "=" * 80)
-    print("✅ ALL blockMeshDict WITH FINS GENERATED!")
+    print(" ALL blockMeshDict WITH FINS GENERATED!")
     print("=" * 80)
     print("\nNext step:")
     print("  ./scripts/run_simulations.sh")
